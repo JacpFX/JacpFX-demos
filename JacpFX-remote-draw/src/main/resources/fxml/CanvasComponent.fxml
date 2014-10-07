@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.layout.*?>
+<VBox HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+      fx:id="root">
+    <children>
+        <VBox VBox.vgrow="ALWAYS" style="-fx-background-color:ghostwhite">
+            <children>
+                <Canvas fx:id="canvas" VBox.vgrow="ALWAYS"/>
+            </children>
+        </VBox>
+    </children>
+</VBox>

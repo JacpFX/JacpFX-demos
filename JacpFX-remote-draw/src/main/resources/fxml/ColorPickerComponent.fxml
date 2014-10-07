@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  ~ ***********************************************************************
+  ~
+  ~  Copyright (C) 2010 - 2014
+  ~
+  ~  [Component.java]
+  ~  JACPFX Project (https://github.com/JacpFX/JacpFX/)
+  ~  All rights reserved.
+  ~
+  ~  Licensed under the Apache License, Version 2.0 (the "License");
+  ~  you may not use this file except in compliance with the License.
+  ~  You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~  Unless required by applicable law or agreed to in writing,
+  ~  software distributed under the License is distributed on an "AS IS"
+  ~  BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either
+  ~  express or implied. See the License for the specific language
+  ~  governing permissions and limitations under the License.
+  ~
+  ~
+  ~ ***********************************************************************/
+  -->
+
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.*?>
+<HBox fx:id="root" alignment="CENTER_RIGHT" prefWidth="300.0" HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS"
+      xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Label fx:id="label" alignment="CENTER" contentDisplay="CENTER"
+               style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: #333333;" text="label"
+               HBox.hgrow="ALWAYS"/>
+        <HBox alignment="CENTER" HBox.hgrow="ALWAYS">
+            <children>
+                <Label text="%canvasName" style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: #333333;"/>
+            </children>
+        </HBox>
+        <ColorPicker fx:id="colorPicker"/>
+    </children>
+</HBox>

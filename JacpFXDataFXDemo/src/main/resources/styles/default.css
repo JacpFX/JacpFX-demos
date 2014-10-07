@@ -1,0 +1,92 @@
+.button,
+.jacp-tool-bar .button,
+.button-dark-grey {
+    -fx-background-color: linear-gradient(#F5F5F5 0%, #E2E2E2 100%), linear-gradient(#F5F5F5 0%, #E2E2E2 100%);
+    -fx-background-insets: 0, 1;
+    -fx-background-radius: 2, 1;
+    -fx-effect: dropshadow(three-pass-box, rgba(255, 255, 255, 0.2), 2, 0.0, 1, 1);
+}
+
+.button:hover,
+.jacp-tool-bar .button:hover,
+.button-dark-grey:hover {
+    -fx-background-color: linear-gradient(#f3f3f3 0%, #ebebeb 100%), linear-gradient(#f3f3f3 0%, #ebebeb 100%);
+    -fx-background-insets: 0, 1;
+    -fx-background-radius: 2, 1;
+    -fx-effect: dropshadow(three-pass-box, rgba(255, 255, 255, 0.2), 2, 0.0, 1, 1);
+}
+
+.button:armed,
+.jacp-tool-bar .button:armed,
+.button-dark-grey:armed {
+    -fx-background-color: linear-gradient(#F5F5F5 0%, #e4e4e4 100%), linear-gradient(#F5F5F5 0%, #e4e4e4 100%);
+    -fx-background-insets: 0, 1;
+    -fx-background-radius: 2, 1;
+    -fx-effect: dropshadow(three-pass-box, rgba(255, 255, 255, 0.2), 2, 0.0, 1, 1);
+}
+
+.button-dark-grey Text {
+    -fx-effect: dropshadow(one-pass-box, black, 0, 0.0, 0, -1);
+}
+
+.jacp-tool-bar {
+    -fx-background-color: linear-gradient(#F5F5F5,#e4e4e4);
+    -fx-background-insets: 0, 1;
+    -fx-background-radius: 2, 1;
+    -fx-effect: dropshadow(three-pass-box, rgba(255, 255, 255, 0.2), 2, 0.0, 1, 1);
+}
+
+
+
+
+.text-area {
+    -fx-font-family: Consolas;
+    -fx-background-color: transparent;
+    -fx-border-width: 0;
+}
+
+.text-area .scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.text-area .scroll-pane .viewport{
+    -fx-background-color: transparent;
+}
+
+
+.text-area .scroll-pane .content{
+    -fx-background-color: transparent;
+}
+
+.dark-border{
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-background-color: transparent;
+}
+
+
+
+
+.pane{
+    -fx-background-color: transparent;
+}
+
+
+
+/* horizontal the two nodes are placed to the left/right of each other. */
+.split-pane:horizontal > * > .split-pane-divider {
+    -fx-border-color: transparent ;
+    -fx-background-color: transparent;
+    -fx-inner-border-horizontal: transparent;
+    -fx-background-insets: 0, 0 1 0 1;
+    -fx-box-border: transparent;
+}
+
+/* vertical the two nodes are placed on top of each other. */
+.split-pane:vertical > * > .split-pane-divider {
+    -fx-border-color: transparent ;
+    -fx-background-color: transparent;
+    -fx-inner-border-horizontal: transparent;
+    -fx-background-insets: 0, 0 1 0 1;
+    -fx-box-border: transparent;
+}

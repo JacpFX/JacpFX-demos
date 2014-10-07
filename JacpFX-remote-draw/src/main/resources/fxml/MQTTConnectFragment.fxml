@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  ~ ***********************************************************************
+  ~
+  ~  Copyright (C) 2010 - 2014
+  ~
+  ~  [Component.java]
+  ~  JACPFX Project (https://github.com/JacpFX/JacpFX/)
+  ~  All rights reserved.
+  ~
+  ~  Licensed under the Apache License, Version 2.0 (the "License");
+  ~  you may not use this file except in compliance with the License.
+  ~  You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~  Unless required by applicable law or agreed to in writing,
+  ~  software distributed under the License is distributed on an "AS IS"
+  ~  BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either
+  ~  express or implied. See the License for the specific language
+  ~  governing permissions and limitations under the License.
+  ~
+  ~
+  ~ ***********************************************************************/
+  -->
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<GridPane hgap="14.0" maxHeight="150" maxWidth="300" minHeight="-Infinity" minWidth="-Infinity"
+          styleClass="jacp-option-pane" vgap="20.0" xmlns="http://javafx.com/javafx/8"
+          xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0"
+                   GridPane.halignment="CENTER" GridPane.rowIndex="0" GridPane.valignment="TOP">
+            <image>
+                <Image url="@../images/connect.png"/>
+            </image>
+        </ImageView>
+        <VBox maxHeight="+Infinity" maxWidth="+Infinity" minHeight="-Infinity" prefWidth="400.0" spacing="7.0"
+              GridPane.columnIndex="1" GridPane.rowIndex="0">
+            <children>
+                <VBox>
+                    <children>
+                        <ChoiceBox maxWidth="1.7976931348623157E308" fx:id="connection"/>
+                    </children>
+                </VBox>
+                <VBox disable="true" visible="false" fx:id="ipinput">
+                    <children>
+                        <Label fx:id="messageLabel" text="IP:PORT" textAlignment="LEFT" wrapText="true">
+                            <font>
+                                <Font name="System Bold" size="13.0"/>
+                            </font>
+                        </Label>
+                        <TextField fx:id="connectAddress" text="tcp://127.0.0.1:1883"/>
+                    </children>
+                </VBox>
+            </children>
+        </VBox>
+        <HBox maxHeight="-Infinity" maxWidth="+Infinity" minHeight="-Infinity" minWidth="-Infinity"
+              GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <children>
+                <Pane maxWidth="+Infinity" HBox.hgrow="ALWAYS"/>
+                <Button fx:id="connectButton" cancelButton="true" minWidth="80.0" mnemonicParsing="false"
+                        onAction="#connectToServer" text="%connect" HBox.hgrow="NEVER">
+                    <HBox.margin>
+                        <Insets/>
+                    </HBox.margin>
+                </Button>
+            </children>
+        </HBox>
+    </children>
+    <columnConstraints>
+        <ColumnConstraints hgrow="NEVER" maxWidth="-Infinity" minWidth="-Infinity"/>
+        <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="+Infinity" minWidth="-Infinity"/>
+    </columnConstraints>
+    <padding>
+        <Insets bottom="14.0" left="14.0" right="14.0" top="14.0"/>
+    </padding>
+    <rowConstraints>
+        <RowConstraints maxHeight="+Infinity" minHeight="-Infinity" valignment="CENTER" vgrow="ALWAYS"/>
+        <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" vgrow="NEVER"/>
+    </rowConstraints>
+</GridPane>
