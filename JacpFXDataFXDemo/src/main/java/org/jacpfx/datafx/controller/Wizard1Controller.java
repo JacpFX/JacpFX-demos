@@ -25,13 +25,13 @@
 
 package org.jacpfx.datafx.controller;
 
+import io.datafx.controller.FXMLController;
+import io.datafx.controller.flow.action.ActionTrigger;
+import io.datafx.controller.flow.context.FXMLViewFlowContext;
+import io.datafx.controller.flow.context.ViewFlowContext;
 import javafx.fxml.FXML;
 import javafx.scene.control.Hyperlink;
 import javafx.scene.control.TextField;
-import org.datafx.controller.FXMLController;
-import org.datafx.controller.flow.action.ActionTrigger;
-import org.datafx.controller.flow.context.FXMLViewFlowContext;
-import org.datafx.controller.flow.context.ViewFlowContext;
 import org.jacpfx.api.annotations.Resource;
 import org.jacpfx.datafx.config.BasicConfig;
 import org.jacpfx.rcp.context.Context;

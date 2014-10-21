@@ -22,6 +22,11 @@
  ************************************************************************/
 package org.jacpfx.datafx.component;
 
+import io.datafx.controller.flow.Flow;
+import io.datafx.controller.flow.FlowException;
+import io.datafx.controller.flow.FlowHandler;
+import io.datafx.controller.flow.container.AnimatedFlowContainer;
+import io.datafx.controller.flow.container.ContainerAnimations;
 import javafx.event.Event;
 import javafx.scene.Node;
 import javafx.scene.control.TextArea;
@@ -30,11 +35,6 @@ import javafx.scene.layout.Priority;
 import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
 import javafx.util.Duration;
-import org.datafx.controller.flow.Flow;
-import org.datafx.controller.flow.FlowException;
-import org.datafx.controller.flow.FlowHandler;
-import org.datafx.controller.flow.container.AnimatedFlowContainer;
-import org.datafx.controller.flow.container.ContainerAnimations;
 import org.jacpfx.api.annotations.Resource;
 import org.jacpfx.api.annotations.component.View;
 import org.jacpfx.api.annotations.lifecycle.PostConstruct;

@@ -25,11 +25,10 @@
 
 package org.jacpfx.datafx.controller;
 
+import io.datafx.controller.FXMLController;
+import io.datafx.controller.flow.action.ActionTrigger;
 import javafx.fxml.FXML;
 import javafx.scene.control.Hyperlink;
-import org.datafx.controller.FXMLController;
-import org.datafx.controller.flow.action.ActionTrigger;
-
 /**
  * This is a view controller for one of the steps in the wizard. All buttons of the action-bar that
  * is shown on each view of the wizard are defined in the AbstractWizardController class. The definition of the

@@ -24,7 +24,8 @@
  */
 
 package org.jacpfx.datafx.controller;
-import org.datafx.controller.FXMLController;
+
+import io.datafx.controller.FXMLController;
 
 import javax.annotation.PostConstruct;
 

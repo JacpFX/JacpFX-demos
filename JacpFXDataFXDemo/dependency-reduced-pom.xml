@@ -52,37 +52,14 @@
                 <transformer>
                   <resource>META-INF/services/org.datafx.controller.context.resource.AnnotatedControllerResourceType</resource>
                 </transformer>
+                <transformer>
+                  <manifestEntries>
+                    <Main-Class>org.jacpfx.datafx.main.ApplicationLauncher</Main-Class>
+                    <X-Compile-Source-JDK>1.8</X-Compile-Source-JDK>
+                    <X-Compile-Target-JDK>1.8</X-Compile-Target-JDK>
+                  </manifestEntries>
+                </transformer>
               </transformers>
-            </configuration>
-          </execution>
-        </executions>
-      </plugin>
-      <plugin>
-        <groupId>org.codehaus.mojo</groupId>
-        <artifactId>exec-maven-plugin</artifactId>
-        <version>1.2.1</version>
-        <executions>
-          <execution>
-            <id>package-jar</id>
-            <phase>package</phase>
-            <goals>
-              <goal>exec</goal>
-            </goals>
-            <configuration>
-              <executable>${env.JAVA_HOME}/bin/javafxpackager</executable>
-              <arguments>
-                <argument>-createjar</argument>
-                <argument>-nocss2bin</argument>
-                <argument>-appclass</argument>
-                <argument>org.jacpfx.datafx.main.ApplicationLauncher</argument>
-                <argument>-srcfiles</argument>
-                <argument>target/JacpFXDataFXDemo-1.0-SNAPSHOT.jar</argument>
-                <argument>-outdir</argument>
-                <argument>./target</argument>
-                <argument>-outfile</argument>
-                <argument>${project.artifactId}-app</argument>
-                <argument>-v</argument>
-              </arguments>
             </configuration>
           </execution>
         </executions>

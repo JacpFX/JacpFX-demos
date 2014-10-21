@@ -25,10 +25,10 @@
 
 package org.jacpfx.datafx.controller;
 
+import io.datafx.controller.FXMLController;
+import io.datafx.controller.flow.action.LinkAction;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
-import org.datafx.controller.FXMLController;
-import org.datafx.controller.flow.action.LinkAction;
 
 /**
  * Created by amo on 10.09.14.
