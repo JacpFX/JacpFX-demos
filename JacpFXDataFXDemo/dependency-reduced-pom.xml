@@ -50,7 +50,7 @@
               </artifactSet>
               <transformers>
                 <transformer>
-                  <resource>META-INF/services/org.datafx.controller.context.resource.AnnotatedControllerResourceType</resource>
+                  <resource>META-INF/services/io.datafx.controller.context.resource.AnnotatedControllerResourceType</resource>
                 </transformer>
                 <transformer>
                   <manifestEntries>

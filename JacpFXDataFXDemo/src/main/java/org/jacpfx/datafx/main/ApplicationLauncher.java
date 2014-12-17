@@ -60,6 +60,7 @@ public class ApplicationLauncher extends JacpFXApplicationLauncher {
 
     @Override
     public void postInit(Stage stage) {
+       // FlatterFX.style();
         Scene scene = stage.getScene();
         // add style sheet
         scene.getStylesheets().addAll(

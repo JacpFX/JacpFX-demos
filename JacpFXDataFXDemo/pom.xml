@@ -14,11 +14,6 @@
             <name>Andy Moncsek</name>
             <email>amo.ahcp@gmail.com</email>
         </developer>
-        <developer>
-            <id>pete</id>
-            <name>Patrick Symmangk</name>
-            <email>pete.ahcp@gmail.com</email>
-        </developer>
     </developers>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -137,7 +132,11 @@
             <version>${jacp.version}</version>
             <scope>compile</scope>
         </dependency>
-
+        <dependency>
+            <groupId>com.guigarage</groupId>
+            <artifactId>flatter</artifactId>
+            <version>0.7</version>
+        </dependency>
 
         <dependency>
             <groupId>log4j</groupId>
