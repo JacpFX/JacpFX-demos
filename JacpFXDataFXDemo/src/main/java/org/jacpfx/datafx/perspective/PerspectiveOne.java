@@ -31,7 +31,6 @@ import javafx.scene.control.SplitPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.Priority;
-import javafx.scene.layout.VBox;
 import org.jacpfx.api.annotations.Resource;
 import org.jacpfx.api.annotations.lifecycle.OnHide;
 import org.jacpfx.api.annotations.lifecycle.OnShow;
@@ -40,12 +39,12 @@ import org.jacpfx.api.annotations.lifecycle.PreDestroy;
 import org.jacpfx.api.annotations.perspective.Perspective;
 import org.jacpfx.api.message.Message;
 import org.jacpfx.api.util.ToolbarPosition;
+import org.jacpfx.datafx.config.BasicConfig;
 import org.jacpfx.rcp.componentLayout.FXComponentLayout;
 import org.jacpfx.rcp.componentLayout.PerspectiveLayout;
 import org.jacpfx.rcp.components.toolBar.JACPToolBar;
 import org.jacpfx.rcp.context.Context;
 import org.jacpfx.rcp.perspective.FXPerspective;
-import org.jacpfx.datafx.config.BasicConfig;
 import org.jacpfx.rcp.util.LayoutUtil;
 
 import java.util.ResourceBundle;
@@ -89,6 +88,7 @@ public class PerspectiveOne implements FXPerspective {
      */
     public void onShow(final FXComponentLayout layout) {
         log.info("on show of PerspectiveOne");
+
     }
 
     @OnHide
