@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.VBox?>
+<VBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:id="parent">
+    <children>
+        <ListView VBox.vgrow="ALWAYS" fx:id="userList" style="-fx-background-insets: 0 ;"/>
+    </children>
+    <VBox.margin>
+        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+    </VBox.margin>
+</VBox>

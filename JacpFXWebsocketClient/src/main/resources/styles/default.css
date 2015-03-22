@@ -1,0 +1,77 @@
+
+.scroll-pane {
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+}
+
+.scroll-pane:focused {
+    -fx-background-insets: 0;
+}
+
+.scroll-pane .corner {
+    -fx-background-insets: 0;
+}
+
+.dark-border {
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-background-color: transparent;
+}
+
+.pane {
+    -fx-background-color: transparent;
+}
+
+/* horizontal the two nodes are placed to the left/right of each other. */
+.split-pane:horizontal > * > .split-pane-divider {
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;
+    -fx-inner-border-horizontal: transparent;
+    -fx-background-insets: 0, 0 1 0 1;
+    -fx-box-border: transparent;
+}
+
+/* vertical the two nodes are placed on top of each other. */
+.split-pane:vertical > * > .split-pane-divider {
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;
+    -fx-inner-border-horizontal: transparent;
+    -fx-background-insets: 0, 0 1 0 1;
+    -fx-box-border: transparent;
+}
+
+#names {
+    -fx-font: 25px Tahoma;
+}
+
+#leftMessage {
+
+    -fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #c5ebfb, transparent);
+    -fx-padding: 5px, 5px, 5px, 5px;
+}
+
+#rightMessage {
+    -fx-background-color: linear-gradient(from 25% 25% to 100% 100%, transparent, #d5e1e6);
+    -fx-padding: 5px, 5px, 5px, 5px;
+}
+
+#chatTextArea {
+    -fx-border-width: 1px;
+    -fx-border-radius: 2, 1;
+    -fx-border-color: lightblue;
+    -fx-background-color: linear-gradient(#37a6ff 0%, #219af4 25%, #198fea 75%, #2091d6 100%);
+    -fx-padding: 5px 5px 5px 5px;
+}
+
+#loginPane {
+    -fx-background-color: linear-gradient(#37a6ff 0%, #219af4 25%, #198fea 75%, #2091d6 100%);
+    -fx-border-width: 1px;
+    -fx-border-radius: 2, 1;
+    -fx-border-color: lightblue;
+}
+
+.list-cell:filled:selected:focused, .list-cell:filled:selected {
+    -fx-background-color: linear-gradient(#37a6ff 0%, #219af4 25%, #198fea 75%, #2091d6 100%);
+    -fx-text-fill: white;
+    -fx-fill: white;
+}
