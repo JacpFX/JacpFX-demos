@@ -12,11 +12,6 @@
       <name>Andy Moncsek</name>
       <email>amo.ahcp@gmail.com</email>
     </developer>
-    <developer>
-      <id>pete</id>
-      <name>Patrick Symmangk</name>
-      <email>pete.ahcp@gmail.com</email>
-    </developer>
   </developers>
   <build>
     <plugins>

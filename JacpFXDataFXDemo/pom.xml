@@ -129,7 +129,7 @@
         <dependency>
             <groupId>org.jacpfx</groupId>
             <artifactId>jacpfx.JavaFXDataFXPlugin</artifactId>
-            <version>${jacp.version}</version>
+            <version>1.0</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
