@@ -20,7 +20,7 @@
  *
  *
  ************************************************************************/
-package org.jacpfx.datafx.perspective;
+package org.jacpfx.jfxMPD.perspective;
 
 import javafx.event.Event;
 import javafx.fxml.FXML;
@@ -44,7 +44,7 @@ import org.jacpfx.rcp.components.toolBar.JACPToolBar;
 import org.jacpfx.rcp.context.Context;
 import org.jacpfx.rcp.perspective.FXPerspective;
 import org.jacpfx.rcp.util.LayoutUtil;
-import org.jacpfx.datafx.config.BasicConfig;
+import org.jacpfx.jfxMPD.config.BasicConfig;
 
 import java.util.ResourceBundle;
 import java.util.logging.Logger;

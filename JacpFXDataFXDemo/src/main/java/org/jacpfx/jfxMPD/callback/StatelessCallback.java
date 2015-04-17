@@ -2,7 +2,7 @@
  *
  * Copyright (C) 2010 - 2012
  *
- * [StatefulCallback.java]
+ * [StatelessCallback.java]
  * AHCP Project (http://jacp.googlecode.com)
  * All rights reserved.
  *
@@ -20,42 +20,45 @@
  *
  *
  ************************************************************************/
-package org.jacpfx.datafx.callback;
+package org.jacpfx.jfxMPD.callback;
 
 import javafx.event.Event;
 import org.jacpfx.api.annotations.Resource;
 import org.jacpfx.api.annotations.component.Component;
+import org.jacpfx.api.annotations.component.Stateless;
 import org.jacpfx.api.annotations.lifecycle.PostConstruct;
 import org.jacpfx.api.annotations.lifecycle.PreDestroy;
 import org.jacpfx.api.message.Message;
 import org.jacpfx.rcp.component.CallbackComponent;
 import org.jacpfx.rcp.context.Context;
 import org.jacpfx.rcp.util.FXUtil;
-import org.jacpfx.datafx.config.BasicConfig;
+import org.jacpfx.jfxMPD.config.BasicConfig;
 
 import java.util.ResourceBundle;
 import java.util.logging.Logger;
 
 /**
- * a stateful JacpFX component
+ * A stateless JacpFX component
  *
  * @author Andy Moncsek
  */
-@Component(id = BasicConfig.STATEFUL_CALLBACK,
-        name = "statefulCallback",
+@Component(id = BasicConfig.STATELESS_CALLBACK,
+        name = "statelessCallback",
         active = true,
         localeID = "en_US",
-        resourceBundleLocation = "bundles.languageBundle")
-public class StatefulCallback implements CallbackComponent {
-    private Logger log = Logger.getLogger(StatefulCallback.class.getName());
+        resourceBundleLocation = "bundles.languageBundle"
+        )
+@Stateless
+public class StatelessCallback implements CallbackComponent {
+    private Logger log = Logger.getLogger(StatelessCallback.class.getName());
     @Resource
     private Context context;
 
     @Override
     public Object handle(final Message<Event, Object> message) {
-        if(!message.messageBodyEquals(FXUtil.MessageUtil.INIT))     {
-           context.setReturnTarget(BasicConfig.PERSPECTIVE_ONE.concat(".").concat(BasicConfig.COMPONENT_RIGHT));
-            return "Hello: " + message.getTypedMessageBody(String.class)+" from StatefulCallback";
+        if (!message.messageBodyEquals(FXUtil.MessageUtil.INIT)) {
+            context.setReturnTarget(BasicConfig.PERSPECTIVE_TWO.concat(".").concat(BasicConfig.COMPONENT_RIGHT));
+            return "Hello: " + message.getTypedMessageBody(String.class) + " from StatelessCallback";
         }
         return null;
     }
@@ -65,7 +68,7 @@ public class StatefulCallback implements CallbackComponent {
      * The @PreDestroy annotations labels methods executed when the component is set to inactive
      */
     public void onPreDestroyComponent() {
-        this.log.info("run on tear down of StatefulCallback ");
+        this.log.info("run on tear down of StatelessCallback ");
 
     }
 
@@ -75,7 +78,7 @@ public class StatefulCallback implements CallbackComponent {
      * @param resourceBundle
      */
     public void onPostConstructComponent(final ResourceBundle resourceBundle) {
-        this.log.info("run on start of StatefulCallback ");
+        this.log.info("run on start of StatelessCallback ");
 
     }
 

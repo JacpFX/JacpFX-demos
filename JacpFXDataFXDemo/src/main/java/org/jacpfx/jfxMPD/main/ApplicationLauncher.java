@@ -20,12 +20,12 @@
  *
  *
  ************************************************************************/
-package org.jacpfx.datafx.main;
+package org.jacpfx.jfxMPD.main;
 
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import org.jacpfx.datafx.workbench.JacpFXWorkbench;
+import org.jacpfx.jfxMPD.workbench.JacpFXWorkbench;
 import org.jacpfx.minimal.launcher.JacpFXApplicationLauncher;
 import org.jacpfx.rcp.workbench.FXWorkbench;
 

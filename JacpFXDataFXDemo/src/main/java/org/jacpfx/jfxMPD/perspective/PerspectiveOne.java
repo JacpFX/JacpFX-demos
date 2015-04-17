@@ -20,7 +20,7 @@
  *
  *
  ************************************************************************/
-package org.jacpfx.datafx.perspective;
+package org.jacpfx.jfxMPD.perspective;
 
 import javafx.event.Event;
 import javafx.geometry.Orientation;
@@ -39,7 +39,7 @@ import org.jacpfx.api.annotations.lifecycle.PreDestroy;
 import org.jacpfx.api.annotations.perspective.Perspective;
 import org.jacpfx.api.message.Message;
 import org.jacpfx.api.util.ToolbarPosition;
-import org.jacpfx.datafx.config.BasicConfig;
+import org.jacpfx.jfxMPD.config.BasicConfig;
 import org.jacpfx.rcp.componentLayout.FXComponentLayout;
 import org.jacpfx.rcp.componentLayout.PerspectiveLayout;
 import org.jacpfx.rcp.components.toolBar.JACPToolBar;

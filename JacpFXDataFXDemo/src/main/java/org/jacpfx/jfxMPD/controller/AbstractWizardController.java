@@ -1,6 +1,6 @@
 
 
-package org.jacpfx.datafx.controller;
+package org.jacpfx.jfxMPD.controller;
 
 import io.datafx.controller.flow.action.ActionTrigger;
 import javafx.fxml.FXML;

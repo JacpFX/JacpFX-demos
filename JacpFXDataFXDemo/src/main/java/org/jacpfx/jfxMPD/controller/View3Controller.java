@@ -23,7 +23,7 @@
  * *********************************************************************
  */
 
-package org.jacpfx.datafx.controller;
+package org.jacpfx.jfxMPD.controller;
 
 import io.datafx.controller.FXMLController;
 import io.datafx.controller.flow.action.LinkAction;
@@ -33,9 +33,9 @@ import javafx.scene.control.Button;
 /**
  * Created by amo on 10.09.14.
  */
-@FXMLController("/fxml/view2.fxml")
-public class View2Controller {
+@FXMLController("/fxml/view3.fxml")
+public class View3Controller {
     @FXML
-    @LinkAction(View3Controller.class)
+    @LinkAction(View1Controller.class)
     private Button actionButton;
 }

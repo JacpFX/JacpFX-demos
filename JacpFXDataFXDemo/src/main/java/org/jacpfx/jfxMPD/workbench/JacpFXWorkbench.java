@@ -20,7 +20,7 @@
  *
  *
  ************************************************************************/
-package org.jacpfx.datafx.workbench;
+package org.jacpfx.jfxMPD.workbench;
 
 import javafx.event.Event;
 import javafx.geometry.Pos;
@@ -41,7 +41,7 @@ import org.jacpfx.rcp.componentLayout.FXComponentLayout;
 import org.jacpfx.rcp.components.menuBar.JACPMenuBar;
 import org.jacpfx.rcp.context.Context;
 import org.jacpfx.rcp.workbench.FXWorkbench;
-import org.jacpfx.datafx.config.BasicConfig;
+import org.jacpfx.jfxMPD.config.BasicConfig;
 
 /**
  * A simple JacpFX workbench

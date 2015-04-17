@@ -22,7 +22,7 @@
  *
  * *********************************************************************
  */
-package org.jacpfx.datafx.component;
+package org.jacpfx.jfxMPD.component;
 
 import javafx.event.Event;
 import javafx.scene.Node;
@@ -35,7 +35,7 @@ import org.jacpfx.api.annotations.component.View;
 import org.jacpfx.api.annotations.lifecycle.PostConstruct;
 import org.jacpfx.api.annotations.lifecycle.PreDestroy;
 import org.jacpfx.api.message.Message;
-import org.jacpfx.datafx.config.BasicConfig;
+import org.jacpfx.jfxMPD.config.BasicConfig;
 import org.jacpfx.rcp.component.FXComponent;
 import org.jacpfx.rcp.componentLayout.FXComponentLayout;
 import org.jacpfx.rcp.context.Context;

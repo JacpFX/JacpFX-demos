@@ -23,7 +23,7 @@
  * *********************************************************************
  */
 
-package org.jacpfx.datafx.controller;
+package org.jacpfx.jfxMPD.controller;
 
 import io.datafx.controller.FXMLController;
 import io.datafx.controller.flow.action.LinkAction;
