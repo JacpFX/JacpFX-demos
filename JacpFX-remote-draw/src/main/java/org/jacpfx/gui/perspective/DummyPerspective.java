@@ -56,6 +56,7 @@ import java.util.ResourceBundle;
                 BaseConfig.COLOR_PICKER_COMPONENT,
                 BaseConfig.CONFIG_PROVIDER},
         viewLocation = "/fxml/DrawingPerspective.fxml",
+        active = false,
         resourceBundleLocation = "bundles.languageBundle",
         localeID = "en_US")
 public class DummyPerspective implements FXPerspective {
@@ -120,7 +121,7 @@ public class DummyPerspective implements FXPerspective {
                                    final ResourceBundle resourceBundle) {
         perspectiveLayout.registerTargetLayoutComponent("vMain", bottom);
         perspectiveLayout.registerTargetLayoutComponent("top", top);
-
+        context.send(BaseConfig.getGlobalId(BaseConfig.DRAWING_PERSPECTIVE, BaseConfig.CONFIG_PROVIDER), "get config");
 
     }
 
