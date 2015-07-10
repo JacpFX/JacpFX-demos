@@ -27,7 +27,6 @@ import io.datafx.controller.flow.FlowException;
 import io.datafx.controller.flow.FlowHandler;
 import io.datafx.controller.flow.container.AnimatedFlowContainer;
 import io.datafx.controller.flow.container.ContainerAnimations;
-import io.datafx.core.concurrent.ProcessChain;
 import javafx.event.Event;
 import javafx.scene.Node;
 import javafx.scene.control.TextArea;
@@ -131,7 +130,7 @@ public class ComponentLeft implements FXComponent {
         } catch (FlowException e) {
             e.printStackTrace();
         }
-        ProcessChain.create().addSupplierInExecutor(()->"").
+
         return null;
     }
 
